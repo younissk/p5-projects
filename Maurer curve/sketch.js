@@ -17,7 +17,7 @@ function draw() {
   beginShape();
   for (let i = 0; i < 360; i++) {
     let k = i * d;
-    let r = (width / 5) * sin(n * k);
+    let r = (width / 10) * sin(n * k);
     let x = r * cos(k);
     let y = r * sin(k);
     vertex(x,y);
