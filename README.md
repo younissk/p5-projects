@@ -7,5 +7,5 @@
 ### 6. [Bezier](https://younissk.github.io/p5-projects/Bezier/index.html)
 ### 7. [Mandelbrot set](https://younissk.github.io/p5-projects/Mandelbrot/index.html)
 ### 8. [Occilation](https://younissk.github.io/p5-projects/Occilation/index.html)
-### 8. [Occilation](https://younissk.github.io/p5-projects/Snowflake/index.html)
+### 9. [Occilation](https://younissk.github.io/p5-projects/Snowflake/index.html)
 
