@@ -17,13 +17,13 @@ function draw() {
   beginShape();
   for (let i = 0; i < 360; i++) {
     let k = i * d;
-    let r = (width / 5) * sin(n * k);
+    let r = (width / 4) * sin(n * k);
     let x = r * cos(k);
     let y = r * sin(k);
     vertex(x,y);
   }
   endShape(CLOSE);
-  n += 0.001;
-  d += 0.005;
+  n += 0.005;
+  d += 0.01;
   c += 0.3;
 }
