@@ -4,32 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin: 20px;
+      }
+      .container a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <a href="./Sin wave/index.html">
-      <h1>Sinewave</h1>
-    </a>
-    <a href="./Gravitational Attraction/index.html">
-      <h1>Gravitational Attraction</h1>
-    </a>
-    <a href="4. Particles\4.1 Particle System Simulation\index.html">
-      <h1>Particles</h1>
-    </a>
-    <a href="./Maurer curve/index.html">
-      <h1>Maurer Curve</h1>
-    </a>
-    <a href="./Bezier/index.html">
-      <h1>Bezier</h1>
-    </a>
-    <a href="./Mandelbrot/index.html">
-      <h1>Mandelbrot set</h1>
-    </a>
-    <a href="./Occilation/index.html">
-      <h1>Occilation</h1>
-    </a>
-    <a href="./Snowflake/index.html">
-      <h1>Snowflake</h1>
-    </a>
+    <div class="grid-container">
+      <div class="container">
+        <a href="./Sin wave/index.html">
+          <h1>Sinewave</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Gravitational Attraction/index.html">
+          <h1>Gravi. Attraction</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="4. Particles\4.1 Particle System Simulation\index.html">
+          <h1>Particles</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Maurer curve/index.html">
+          <h1>Maurer Curve</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Bezier/index.html">
+          <h1>Bezier</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Mandelbrot/index.html">
+          <h1>Mandelbrot set</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Occilation/index.html">
+          <h1>Occilation</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Snowflake/index.html">
+          <h1>Snowflake</h1>
+        </a>
+      </div>
+      <div class="container">
+        <a href="./Self avoiding walk/index.html">
+          <h1>Self avoiding Walk</h1>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
