@@ -48,7 +48,7 @@ function draw() {
   let g = map(cos(offset), 0, 1, 0, 255);
   let b = map(noise(offset), 0, 1, 0, 255);
 
-  background(map(sin(offset), 0, 1, 10, 51));
+  background(0);
   translate(spacing * 0.5, spacing * 0.5);
 
   spot = spot.nextSpot();
