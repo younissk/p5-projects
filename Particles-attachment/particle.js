@@ -8,9 +8,9 @@ class Particle {
     this.r = random(1, 12);
     this.xSpeed = random(-2, 2);
     this.ySpeed = random(-1, 1.5);
-    this.red = random(50);
-    this.green = random(200);
-    this.blue = random(200);
+    this.red = random(200);
+    this.green = random(50);
+    this.blue = random(50);
   }
 
   create() {
