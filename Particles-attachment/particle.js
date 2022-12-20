@@ -8,6 +8,7 @@ class Particle {
     this.r = random(3, 20);
     this.xSpeed = random(-2, 2);
     this.ySpeed = random(-1, 1.5);
+    this.isOrange = random(0,1);
     this.red = random(200);
     this.green = random(10);
     this.blue = random(10);
@@ -15,7 +16,12 @@ class Particle {
 
   create() {
     noStroke();
-    fill(this.red, this.green, this.blue);
+    if (this.isOrange === 1) {
+      fill(248, 152, 32);
+    } else {
+      fill(83, 130, 161)
+    }
+    // fill(this.red, this.green, this.blue);
     circle(this.x, this.y, this.r);
   }
 
