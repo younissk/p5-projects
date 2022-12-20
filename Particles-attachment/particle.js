@@ -8,7 +8,7 @@ class Particle {
     this.r = random(3, 20);
     this.xSpeed = random(-2, 2);
     this.ySpeed = random(-1, 1.5);
-    this.isOrange = random(0,1);
+    this.isOrange = random(0, 1);
     this.red = random(200);
     this.green = random(10);
     this.blue = random(10);
@@ -16,10 +16,10 @@ class Particle {
 
   create() {
     noStroke();
-    if (this.isOrange === 1) {
+    if (Math.round(this.isOrange) === 1) {
       fill(248, 152, 32);
     } else {
-      fill(83, 130, 161)
+      fill(83, 130, 161);
     }
     // fill(this.red, this.green, this.blue);
     circle(this.x, this.y, this.r);
@@ -36,7 +36,12 @@ class Particle {
     particles.forEach((element) => {
       let dis = dist(this.x, this.y, element.x, element.y);
       if (dis < 85) {
-        stroke(this.red, this.green, this.blue);
+        if (Math.round(this.isOrange) === 1) {
+          stroke(248, 152, 32);
+        } else {
+          stroke(83, 130, 161);
+        }
+        // stroke(this.red, this.green, this.blue);
         line(this.x, this.y, element.x, element.y);
       }
     });
