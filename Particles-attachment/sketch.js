@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(203, 202, 202);
   for (let i = 0; i < particles.length; i++) {
     particles[i].create();
     particles[i].move();
