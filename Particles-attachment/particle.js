@@ -12,14 +12,16 @@ class Particle {
     this.red = random(200);
     this.green = random(10);
     this.blue = random(10);
+    this.c1 = color(0, 144, 0)
+    this.c2 = color(255, 173, 1)
   }
 
   create() {
     noStroke();
     if (Math.round(this.isOrange) === 1) {
-      fill(248, 152, 32);
+      fill(this.c1);
     } else {
-      fill(83, 130, 161);
+      fill(this.c2);
     }
     // fill(this.red, this.green, this.blue);
     circle(this.x, this.y, this.r);
@@ -37,9 +39,9 @@ class Particle {
       let dis = dist(this.x, this.y, element.x, element.y);
       if (dis < 85) {
         if (Math.round(this.isOrange) === 1) {
-          stroke(248, 152, 32);
+          stroke(this.c1);
         } else {
-          stroke(83, 130, 161);
+          stroke(this.c2);
         }
         // stroke(this.red, this.green, this.blue);
         line(this.x, this.y, element.x, element.y);
